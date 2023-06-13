@@ -39,7 +39,7 @@ int main(void){
     fill(state+1, state+n+1, 0);
     for(int i = 1; i <= n; i++)
       cin >> arr[i];
-    int ans = 0;
+
     for(int i = 1; i <= n; i++){
       if(state[i] == NOT_VISITED) run(i);
     }
